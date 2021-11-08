@@ -25,13 +25,27 @@ class LinkedList{
 
     return elements;
   }
+
+  prepend(value){
+    const newNode = {value: value, next : this.head}
+
+      this.head = newNode;
+      if(!this.tail){
+        this.tail = newNode;
+      }
+    
+  }
 }
 
 const Alfabet = new LinkedList();
 
-Alfabet.append("a");
 Alfabet.append("b");
 Alfabet.append("c");
 Alfabet.append("d");
+
+console.log(Alfabet.ToArray())
+
+
+Alfabet.prepend("a");
 
 console.log(Alfabet.ToArray())
