@@ -51,7 +51,7 @@ class LinkedList{
 
     while(curNode){
         if(curNode.value === value){
-          curNode;
+          return curNode;
         }
         else{
           curNode = curNode.next;
@@ -116,6 +116,6 @@ Alfabet.delete(false);
 Alfabet.delete(0);
 console.log(Alfabet.ToArray())
 
-//console.log(Alfabet.find("a"))
-//console.log(Alfabet.find(39)) 
+console.log(Alfabet.find("a"))
+console.log(Alfabet.find(39)) 
 //code blokkeert met find
